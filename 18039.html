@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Security Blog</title>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f5f0e6; /* Light Beige */
+            color: #4a4a4a;
+        }
+
+        header {
+            background: #e8dcc7; /* Soft beige */
+            color: #4a4a4a;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 2px solid #d3c3a3;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #4a4a4a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #8b6f47;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 60px 20px;
+            background: #f1e7d3; 
+            border-radius: 20px;
+            margin: 20px;
+            border: 1px solid #e0d2b8;
+        }
+
+        #readMoreBtn {
+            background: #8b6f47; 
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #readMoreBtn:hover {
+            background: #6e5838;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .card {
+            background: #fffdf8;
+            border-left: 5px solid #8b6f47;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .about {
+            background: #f1e7d3;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #e0d2b8;
+        }
+
+        footer {
+            background: #e8dcc7;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #5a5a5a;
+            border-top: 2px solid #d3c3a3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🔐 Network Security Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro">
+        <h2>Welcome to the World of Network Security</h2>
+        <p>Network security protects data and systems from cyber threats. Learn about firewalls, encryption, and the latest in cybersecurity technology here.</p>
+        <button id="readMoreBtn">Read More</button>
+    </section>
+
+    <section id="articles" class="content">
+        <h2>Latest Articles</h2>
+
+        <article class="card">
+            <h3>1️⃣ What is Network Security?</h3>
+            <p>Network security refers to policies and practices to prevent unauthorized access, misuse, or modification of network resources. It ensures data confidentiality, integrity, and availability.</p>
+        </article>
+
+        <article class="card">
+            <h3>2️⃣ Types of Network Security</h3>
+            <ul>
+                <li><b>Firewalls:</b> Monitor and control network traffic.</li>
+                <li><b>Antivirus Software:</b> Detects and removes malicious software.</li>
+                <li><b>Encryption:</b> Protects sensitive information during transmission.</li>
+                <li><b>VPN:</b> Creates secure connections over the internet.</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h3>3️⃣ Importance of Network Security</h3>
+            <p>It prevents cyberattacks, protects identity and data, and ensures smooth network operations for individuals and businesses.</p>
+        </article>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About This Blog</h2>
+        <p>This blog is created to spread awareness about cybersecurity and network protection. Stay informed, stay safe!</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Network Security Blog | Designed by Sweta</p>
+    </footer>
+
+    <script>
+        document.getElementById("readMoreBtn")
+        .addEventListener("click", function() {
+            alert("Network security protects your digital world — scroll down for articles!");
+        });
+    </script>
+
+</body>
+</html>
